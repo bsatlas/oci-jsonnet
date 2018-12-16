@@ -1,6 +1,13 @@
+local config = import 'config.libsonnet';
+local descriptor = import 'descriptor.libsonnet';
+local index = import 'index.libsonnet';
+local manifest = import 'manifest.libsonnet';
+local rootfs = import 'rootfs.libsonnet';
+
 {
-  config:: import 'config.libsonnet',
-  index:: import 'index.libsonnet',
-  manifest:: import 'manifest.libsonnet',
-  descriptor:: import 'descriptor.libsonnet',
+  config:: config.new,
+  rootfs:: rootfs.new,
+  index:: index.new,
+  manifest:: manifest.new,
+  descriptor:: descriptor.new,
 }
