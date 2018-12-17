@@ -1,5 +1,6 @@
 local config = import 'config.libsonnet';
 local descriptor = import 'descriptor.libsonnet';
+local examples = import 'examples.libsonnet';
 local index = import 'index.libsonnet';
 local manifest = import 'manifest.libsonnet';
 local rootfs = import 'rootfs.libsonnet';
@@ -10,4 +11,5 @@ local rootfs = import 'rootfs.libsonnet';
   index:: index.new,
   manifest:: manifest.new,
   descriptor:: descriptor.new,
+  examples:: examples,
 }
