@@ -86,7 +86,7 @@ local configs = {
     )
 
     .addAnnotation('org.opencontainers.image.created', '2018-12-16 20:11:14.351488997-06:00')
-    .addAnnotation('org.opencontainers.image.authors', 'Atlas Kerr <atlaskerr@gmail.com')
+    .addAnnotation('org.opencontainers.image.authors', 'Pepper Potts <pepper.potts@starkindustries.com>')
     .addAnnotation('org.opencontainers.image.url', 'https://app-site.com')
     .addAnnotation('org.opencontainers.image.documentation', 'https://app-site.com/docs')
     .addAnnotation('org.opencontainers.image.source', 'https://app-site.com/code/app.git')
@@ -108,7 +108,7 @@ local configs = {
     .addLayer(layers.four)
 
     .addAnnotation('org.opencontainers.image.created', '2018-12-16 20:11:14.351488997-06:00')
-    .addAnnotation('org.opencontainers.image.authors', 'Atlas Kerr <atlaskerr@gmail.com')
+    .addAnnotation('org.opencontainers.image.authors', 'Pepper Potts <pepper.potts@starkindustries.com>')
     .addAnnotation('org.opencontainers.image.url', 'https://app-site.com')
     .addAnnotation('org.opencontainers.image.documentation', 'https://app-site.com/docs')
     .addAnnotation('org.opencontainers.image.source', 'https://app-site.com/code/app.git')
@@ -122,8 +122,8 @@ local configs = {
 
   config:
     img.config(
-      created='2015-10-31T22:22:54.690851953Z',
-      author='Atlas Kerr',
+      created='2018-12-16T20:38:54.690851953Z',
+      author='Pepper Potts',
       user='app-user',
       workingDir='/var/lib/app',
       stopSignal='SIGTERM',
@@ -135,25 +135,25 @@ local configs = {
 
     .addHistory(
       created='2018-12-16 20:36:25.543469672-06:00',
-      author='Atlas Kerr <atlaskerr@gmail.com',
+      author='Pepper Potts <pepper.potts@starkindustries.com>',
       createdBy='/usr/local/bin/oci-compliant-build-tool ./build/app',
       comment='App base layer.',
     )
     .addHistory(
       created='2018-12-16 20:36:43.287882890-06:00',
-      author='Atlas Kerr <atlaskerr@gmail.com',
+      author='Pepper Potts <pepper.potts@starkindustries.com>',
       createdBy='/usr/local/bin/oci-compliant-build-tool ./build/app',
       comment='App dependency one.',
     )
     .addHistory(
       created='2018-12-16 20:37:17.990254281-06:00',
-      author='Atlas Kerr <atlaskerr@gmail.com',
+      author='Pepper Potts <pepper.potts@starkindustries.com>',
       createdBy='/usr/local/bin/oci-compliant-build-tool ./build/app',
       comment='App dependency two.',
     )
     .addHistory(
       created='2018-12-16 20:37:37.250792666-06:00',
-      author='Atlas Kerr <atlaskerr@gmail.com',
+      author='Pepper Potts <pepper.potts@starkindustries.com>',
       createdBy='/usr/local/bin/oci-compliant-build-tool ./build/app',
       comment='App overwrite default config.',
     )
@@ -169,7 +169,7 @@ local configs = {
     .addVolume('/var/log/app')
 
     .addLabel('org.opencontainers.image.created', '2018-12-16 20:11:14.351488997-06:00')
-    .addLabel('org.opencontainers.image.authors', 'Atlas Kerr <atlaskerr@gmail.com')
+    .addLabel('org.opencontainers.image.authors', 'Pepper Potts <pepper.potts@starkindustries.com>')
     .addLabel('org.opencontainers.image.url', 'https://app-site.com')
     .addLabel('org.opencontainers.image.documentation', 'https://app-site.com/docs')
     .addLabel('org.opencontainers.image.source', 'https://app-site.com/code/app.git')
